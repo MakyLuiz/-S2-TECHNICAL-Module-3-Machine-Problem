@@ -1,0 +1,108 @@
+body {
+    display: flex;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#mon { background-color: #bb05f3; }
+#tues { background-color: #ffa1d5; }
+#wed { background-color: #2600ff; }
+#thurs { background-color: #00ff00; }
+#fri { background-color: #fffb00; }
+#sat { background-color: #ff7300; }
+#sun { background-color: #ff0000; }
+
+button {
+    border: 1px solid #000000;
+    margin-bottom: 3%;
+    padding: 10px 13%;
+    cursor: pointer;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    transition: .3s;
+}
+
+
+.bold_border {
+    border: 3px solid #000000;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.square {
+    height: 1px;
+    width: 1px;
+    padding: 10%;
+    margin-right: 20%;
+    margin-top: 5%;
+    border: 3px solid #ffffff;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-150%);
+}
+
+.square.falling {
+    transform: translateY(0);
+    background-color: #ffffff;
+}
+
+#monsq {
+    background-color: #bb05f3;
+    border: 10px solid #bb05f3;
+    left: 50%;
+    transition: transform 1.5s ease-out, background-color 3s ease-out;
+}
+
+#tuessq{
+    background-color: #ffa1d5;
+    border: 10px solid #ffa1d5;
+    left: 50%;
+    transition: transform 1.5s ease-out, background-color 3s ease-out;
+}
+
+#wedsq{
+    background-color: #2600ff;
+    border: 10px solid #2600ff;
+    left: 50%;
+    transition: transform 1.5s ease-out, background-color 3s ease-out;
+}
+
+#thurssq{
+    background-color: #00ff00;
+    border: 10px solid #00ff00;
+    left: 50%;
+    transition: transform 1.5s ease-out, background-color 3s ease-out;
+}
+
+#frisq{
+    background-color: #fffb00;
+    border: 10px solid #fffb00;
+    left: 50%;
+    transition: transform 1.5s ease-out, background-color 3s ease-out;
+}
+
+#satsq{
+    background-color: #ff7300;
+    border: 10px solid #ff7300;
+    left: 50%;
+    transition: transform 1.5s ease-out, background-color 3s ease-out;
+}
+
+#sunsq{
+    background-color: #ff0000;
+    border: 10px solid #ff0000;
+    left: 50%;
+    transition: transform 1.5s ease-out, background-color 3s ease-out;
+}
